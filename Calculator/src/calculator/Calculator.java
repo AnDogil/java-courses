@@ -19,10 +19,14 @@ public class Calculator {
      */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-        String str = read.nextLine();
+        String str, operator; 
+        str = read.nextLine();
         String[] arguments = new getArgs().splitting(str);
         for(String str1 : arguments){
-        System.out.println(Integer.valueOf(str1));}        
+        try{Integer.valueOf(str1);
+        }catch(NumberFormatException e){System.err.println("Неверный формат числа");};
+        
+        }        
         /*do{ str = read.nextLine();
             
             System.out.println(str);}
