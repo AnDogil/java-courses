@@ -6,10 +6,6 @@
 
 package calculator;
 
-/**
- *
- * @author VVTrebish
- */
 public class getArgs {
     String[] arguments;
     String[] splitting(String str){
