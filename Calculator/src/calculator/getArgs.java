@@ -11,10 +11,27 @@ package calculator;
  * @author VVTrebish
  */
 public class getArgs {
-    String[] arguments;
-    String[] splitting(String str){
-        arguments = str.split(" ");
-        return arguments;
+    private float frArg, dblArg, rez;
+    private String opr;
+    final public float getArgs(float frArg, float dblArg, String opr){
+        this.opr   =opr;
+        this.frArg =frArg;
+        this.dblArg=dblArg;
+        switch(this.opr){
+            case "+":
+                this.rez = this.frArg + this.dblArg;
+                break;
+            case "-":
+                this.rez = this.frArg - this.dblArg;
+                break;
+            case "/":
+                this.rez = this.frArg / this.dblArg;
+                break;
+            case "*":
+                this.rez = this.frArg * this.dblArg;
+                break;
+        }
+        return rez;
     }
-    
 }
+

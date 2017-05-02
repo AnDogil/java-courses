@@ -20,18 +20,14 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         String str, operator; 
-        str = read.nextLine();
-        String[] arguments = new getArgs().splitting(str);
-        for(String str1 : arguments){
-        try{Integer.valueOf(str1);
-        }catch(NumberFormatException e){System.err.println("Неверный формат числа");};
-        
-        }        
-        /*do{ str = read.nextLine();
+        //str = read.nextLine();
+        //String[] arguments = new getArgs().splitting(str);
+                
+        do{ str = read.next();
             
             System.out.println(str);}
-        while(!str.equals("1"))
-    */            ;
+        while(!str.equals("q"))
+                ;
     }
     
 }
