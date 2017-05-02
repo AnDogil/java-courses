@@ -13,11 +13,25 @@ public class getArgs {
         this.frArg = frArg;
         this.dblArg = dblArg;
         this.opr = opr;
+        switch(opr){
+            case '+':
+                this.rez = this.frArg + this.dblArg;
+                break;
+            case '-':
+                this.rez = this.frArg - this.dblArg;
+                break;
+            case '/':
+                this.rez = this.frArg / this.dblArg;
+                break;
+            case '*':
+                this.rez = this.frArg * this.dblArg;
+                break;
         
+        }
     return this.rez;
     }
     
     
     }
     
-}
+
