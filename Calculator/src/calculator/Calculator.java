@@ -6,6 +6,7 @@
 
 package calculator;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -19,13 +20,21 @@ public class Calculator {
      */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-        String str, operator; 
+        float frArg, dblArg, rez;
+        String str, operator;
+        ArrayList<Float> operands = new ArrayList<Float>();
         //str = read.nextLine();
         //String[] arguments = new getArgs().splitting(str);
                 
         do{ str = read.next();
-            
-            System.out.println(str);}
+            try{
+                operands.add(Float.valueOf(str));}
+            catch(NumberFormatException e){
+                switch(str){
+                    case "mem":
+                        rez= -1;
+                        operator = str;}}
+            }
         while(!str.equals("q"))
                 ;
     }

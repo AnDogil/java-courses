@@ -13,6 +13,12 @@ package calculator;
 public class getArgs {
     private float frArg, dblArg, rez;
     private String opr;
+    /*
+    Конструктор получает операнды и оператор.
+    В зависимоти от оператора выполняется соответствующее действие
+    и возвращается результат выражения
+    */
+    
     final public float getArgs(float frArg, float dblArg, String opr){
         this.opr   =opr;
         this.frArg =frArg;
