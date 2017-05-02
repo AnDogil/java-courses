@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author VVTrebish
  */
 public class Calculator {
-
+//Пососите тунца
     
     public static void main(String[] args) {
         
