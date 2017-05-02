@@ -7,10 +7,17 @@
 package calculator;
 
 public class getArgs {
-    String[] arguments;
-    String[] splitting(String str){
-        arguments = str.split(" ");
-        return arguments;
+    private float rez, frArg, dblArg;
+    private char opr;
+    final float getArgs(float frArg, float dblArg, char opr){
+        this.frArg = frArg;
+        this.dblArg = dblArg;
+        this.opr = opr;
+        
+    return this.rez;
+    }
+    
+    
     }
     
 }
