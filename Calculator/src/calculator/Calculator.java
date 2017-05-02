@@ -17,7 +17,7 @@ public class Calculator {
         Scanner read = new Scanner(System.in);
         String str, operator="";
         LinkedList<Float> operands = new LinkedList<Float>();
-        float rezultat=0;
+        float rez, mem, frArg, dblArg;
         str = read.nextLine();
         String[] arguments = new getArgs().splitting(str);
         
