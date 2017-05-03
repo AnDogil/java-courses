@@ -6,13 +6,10 @@
 
 package calculator;
 
-/**
- *
- * @author VVTrebish
- */
 public class getArgs {
-    private float frArg, dblArg, rez;
-    private String opr;
+
+    static private float frArg, dblArg, rez;
+    static private String opr;
     /*
     Конструктор получает операнды и оператор.
     В зависимоти от оператора выполняется соответствующее действие
@@ -20,8 +17,8 @@ public class getArgs {
     */
     
     final public float getArgs(float frArg, float dblArg, String opr){
-        this.opr   =opr;
-        this.frArg =frArg;
+        getArgs.opr   =opr;
+        frArg =frArg;
         this.dblArg=dblArg;
         switch(this.opr){
             case "+":
@@ -40,4 +37,7 @@ public class getArgs {
         return rez;
     }
 }
+
+    
+
 
