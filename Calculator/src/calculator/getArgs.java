@@ -16,22 +16,22 @@ public class getArgs {
     и возвращается результат выражения
     */
     
-    final public float getArgs(float frArg, float dblArg, String opr){
-        getArgs.opr   =opr;
-        frArg =frArg;
-        this.dblArg=dblArg;
-        switch(this.opr){
+    static public  float makeOperation(float frArg_, float dblArg_, String opr_){
+        opr   =opr_;
+        frArg =frArg_;
+        dblArg=dblArg_;
+        switch(opr){
             case "+":
-                this.rez = this.frArg + this.dblArg;
+                rez = frArg + dblArg;
                 break;
             case "-":
-                this.rez = this.frArg - this.dblArg;
+                rez = frArg - dblArg;
                 break;
             case "/":
-                this.rez = this.frArg / this.dblArg;
+                rez = frArg / dblArg;
                 break;
             case "*":
-                this.rez = this.frArg * this.dblArg;
+                rez = frArg * dblArg;
                 break;
         }
         return rez;

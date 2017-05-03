@@ -28,15 +28,17 @@ public class Calculator {
         //String[] arguments = new getArgs().splitting(str);
                 
         do{ str = read.next();
-            if(operands.size() ==2){
-                System.out.println("Два оператора");
-                System.out.println("Операция: " + operator);
-                operands.clear();}
-                try{
+            
+            try{
                 operands.add(Float.valueOf(str));}
             catch(NumberFormatException e){
                 operator= str;};
-            }
+            if(operands.size() ==2){
+                System.out.println("Результат равен: "+ getArgs.makeOperation(operands.get(0), operands.get(1), operator));
+                operands.clear();}
+            
+        
+        }
         while(!str.equals("q"))
                 ;
     }
